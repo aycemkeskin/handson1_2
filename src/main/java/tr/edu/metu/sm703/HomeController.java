@@ -12,11 +12,11 @@ public class HomeController {
     int x = 5;
     int y = 2;
     int z = 3;
-
-    int sum = x + y + z;
+    int t = 1;
+    int sum = x + y + z + t;
 
     @Get
     public Map<String, Object> index() {
-        return Collections.singletonMap("message sum of x, y, and z: ", sum);
+        return Collections.singletonMap("message sum of x, y, z, t: ", sum);
     }
 }
