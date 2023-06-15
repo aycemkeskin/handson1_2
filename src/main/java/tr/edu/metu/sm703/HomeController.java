@@ -17,6 +17,6 @@ public class HomeController {
 
     @Get
     public Map<String, Object> index() {
-        return Collections.singletonMap("message sum of x, y, and z: ", sum);
+        return Collections.singletonMap("Total sum of x, y, and z: ", sum);
     }
 }
