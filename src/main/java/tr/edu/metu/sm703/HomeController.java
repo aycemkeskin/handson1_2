@@ -14,6 +14,7 @@ public class HomeController {
     int z = 3;
 
     int sum = x + y + z;
+    String password = "password123";
     @Get
     public Map<String, Object> index() {
         return Collections.singletonMap("Total sum of x, y, and z: ", sum);
