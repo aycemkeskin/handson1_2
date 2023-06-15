@@ -8,7 +8,7 @@ import java.util.Map;
 
 @Controller
 public class HomeController {
-
+    
     int x = 5;
     int y = 2;
     int z = 3;
