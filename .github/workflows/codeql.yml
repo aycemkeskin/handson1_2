@@ -2,13 +2,18 @@ name: "CodeQL"
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ master ]
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ develop ]
+    branches: [ master ]
   schedule:
     - cron: '0 14 * * 0'
-
+    
+permissions:
+  contents: read
+  actions: read
+  security-events: write
+  
 jobs:
   analyze:
     name: Analyze
@@ -17,7 +22,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [ 'javascript', 'python', 'java', 'cpp', 'csharp', 'go', 'ruby', 'typescript' ]
+        language: [ 'java' ]
         # CodeQL supports ['cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby', 'typescript']
 
     steps:
