@@ -25,17 +25,9 @@ public class HomeController {
     int sum = x + y + z;
     String password = "password123";
 
-    HttpRequest request;
-    String serializedObject = request.getParameters().toString();
-    ObjectInputStream in = new ObjectInputStream(new ByteArrayInputStream(Base64.getDecoder().decode(serializedObject)));
-    Object obj = in.readObject();
-
-    public HomeController() throws IOException, ClassNotFoundException {
-        //TODO: add sth here
-    }
-
     @Get
     public Map<String, Object> index() {
+        //TODO: add sth here
         return Collections.singletonMap("Total sum of x, y, and z: ", sum);
     }
 }
