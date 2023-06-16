@@ -25,6 +25,13 @@ public class HomeController {
     int sum = x + y + z;
     String password = "password123";
 
+    void emptyBlock() {
+        try {
+
+        } catch (Exception e) {
+
+        }
+    }
     @Get
     public Map<String, Object> index() {
         //fixme
