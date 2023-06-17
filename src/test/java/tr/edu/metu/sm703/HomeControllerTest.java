@@ -38,6 +38,6 @@ public class HomeControllerTest {
         request.setPath("/");
         AwsProxyResponse response = handler.handleRequest(request, lambdaContext);
         assertEquals(200, response.getStatusCode());
-        assertEquals("{\"message sum of x, y, z, t: \":11}",  response.getBody());
+        assertEquals("{\"message2 sum of x, y, z, t: \":11}",  response.getBody());
     }
 }
